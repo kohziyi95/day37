@@ -1,0 +1,11 @@
+<webcam
+  [trigger]="triggerObservable"
+  (imageCapture)="handleImage($event)"
+></webcam>
+<div>
+  <button (click)="triggerSnapshot()" style="padding: 10px">
+    <h1>Take Picture</h1>
+  </button>
+</div>
+<img [src]="imageUrl" />
+
